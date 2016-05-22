@@ -1,0 +1,2 @@
+course_id,name,description,submission_types,notify_of_update,points_possible,grading_type,due_at,lock_at,unlock_at,muted,published
+assignment_test,Assignment Example,<h1>HTML</h1><h2>Assignment</h2><h3>Description</h3><p>LorumIpsum LorumIpsum</p>,online_upload,TRUE,100,points,2016-10-21T18:48:00Z,,2014-10-01T18:48:00Z,,TRUE
