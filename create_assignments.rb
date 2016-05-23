@@ -18,7 +18,7 @@ hydra = Typhoeus::Hydra.new(max_concurrency: 20)
 
 CSV.foreach(csv_file, {headers: true}) do |row|
 	#make sure course exists
-	api_get_course = Typhoeus::Request.new("https://jlg.instructure.com/api/v1/courses/sis_course_id:#{row['course_id']}",
+	api_get_course = Typhoeus::Request.new("https://#{base_url}.instructure.com/api/v1/courses/sis_course_id:#{row['course_id']}",
 										  headers: default_headers)
 
 		api_get_course.on_complete do |response|
